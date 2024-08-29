@@ -10,8 +10,11 @@ well as JA3/JA4 support.
 - Utilities for creating some extensions easily, e.g. grease ECH.
 
 ## Version Support
+We use the forked version of rustls with necessary modifications. Every `rustls` version has a corresponding branch in the
+forked repository. See the next section for more details.
 
-Currently only `rustls@0.23.4` is supported.
+- `rustls@0.23.12`: 'v0.23.12'
+- `rustls@0.23.4`: 'unofficial-rel-0.23'
 
 ## How to Use
 
@@ -27,7 +30,7 @@ and add the following to your root `Cargo.toml` of the workspace (if you have on
 
 ```toml
 [patch.crates-io]
-rustls = { git = "https://github.com/XOR-op/rustls.delta.git", branch = "unofficial-rel-0.23" }
+rustls = { git = "https://github.com/XOR-op/rustls.delta.git", branch = "v0.23.12" }
 ```
 
 Adding these will resolve all the same version `rustls` in the direct or indirect dependencies to the patched crate.
