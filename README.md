@@ -14,7 +14,6 @@ We use the forked version of rustls with necessary modifications. Every `rustls`
 forked repository. See the next section for more details.
 
 - `rustls@0.23.12`: 'v0.23.12'
-- `rustls@0.23.4`: 'unofficial-rel-0.23'
 
 ## How to Use
 

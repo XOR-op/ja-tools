@@ -121,7 +121,7 @@ impl JAOverrideBuilder {
                                     .ok_or(FailReason::MissingSignatureAlgorithms)?,
                             ))
                         }
-                        ExtensionType::Unknown(27) => {
+                        ExtensionType::CompressCertificate => {
                             ExtensionChunk::Extension(ClientExtension::compress_certificate(&[
                                 self.compress_certificate
                                     .ok_or(FailReason::MissingCompressCertificate)?,
